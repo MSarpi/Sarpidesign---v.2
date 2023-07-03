@@ -87,6 +87,14 @@ html, body {
 
 .size-text{
     font-size: 2rem;
+    transition: .6s;
+}
+
+.size-text:hover{
+    padding: .3rem;
+    background: #bb007d;
+    border-radius: 1rem 1rem 1rem 0;
+    color: white;
 }
 
 .size-image{
