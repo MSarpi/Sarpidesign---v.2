@@ -7,89 +7,71 @@
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <header>
-    <main>
+    <main class="full-screen">
         <div class="contenedor_loader">
-            <div class="loader">
-                
-            </div>
+            <div class="loader"></div>
         </div>
         <div class="presentacion">
            
         </div>
-        <div class="flex items-center fixed top-0 w-full justify-between flex-wrap py-3 px-10 nav-class">
+        <div id="nav" class="flex fixed items-center top-0 w-full justify-between flex-wrap py-3 px-10 nav-class nav-transition">
             <div class="flex flex-grow basis-center color-tex" >
-                <p class="font-semibold tracking-tight icon-text"><span><i class="fa-solid fa-computer fa-bounce icon-text"></i></span>ㅤSarpiDesign</p>
+                <a href="#" target="_blank" class="font-semibold tracking-tight icon-text"><span><i class="fa-solid fa-computer fa-bounce icon-text"></i></span>ㅤSarpiDesign</a>
             </div>
             <br>
             <div class="block lg:hidden">
-                <button id='boton' class="flex items-center px-3 py-2 border rounded hover:border-white hamburguesa">
+                <button id='boton' onclick="transicion_hamburguesa()" class="flex items-center px-3 py-2 border rounded hover:border-white hamburguesa">
                 <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                 </button>
             </div>
 
             <div id='menu' class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto basis-center color-text">
-                <div class="mt-2 text-md lg:flex-grow">
+                <!-- <div class="mt-2 text-md lg:flex-grow">
                     <a onclick="element()" class="px-3 block text-center lg:inline-block mr-4 seccion size-text" href="#">Sobre Mi</a>
                     <a onclick="element()" class="px-3 block text-center lg:inline-block mr-4 seccion size-text" href="#">Habilidades</a>
                     <a onclick="element()" class="px-3 block text-center lg:inline-block mr-4 seccion size-text" href="#">Proyectos</a>
                     <a onclick="element()" class="px-3 block text-center lg:inline-block mr-4 seccion size-text"  href="#">Contactame</a>
                 </div>
-                <br>
+                <br> -->
                 <div class="text-center lg:flex flex-grow justify-end basis-0">
-                    <a class="px-3 py-3 text-4xl icon-hover what" href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a class="px-3 py-3 text-4xl icon-hover link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a class="px-3 py-3 text-4xl icon-hover git" href="#"><i class="fa-brands fa-github"></i></a>
-                    <a class="px-3 py-3 text-4xl icon-hover inst" href="#"><i class="fa-brands fa-instagram"></i></a>
-                    
+                    <a class="px-3 py-3 text-4xl icon-hover what" href="https://api.whatsapp.com/send?phone=56957326432&text=Hola!%20vengo%20de%20tu%20pagina%20web" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a class="px-3 py-3 text-4xl icon-hover link" href="https://www.linkedin.com/in/miguel-sarpi/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="px-3 py-3 text-4xl icon-hover git" href="https://github.com/MSarpi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a class="px-3 py-3 text-4xl icon-hover inst" href="https://www.instagram.com/jinsei_ilustrador/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-
-            <!-- <div class=" w-full block flex-grow lg:flex lg:items-center lg:w-auto basis-center">
-                <div class="mt-2 text-md lg:flex-grow">
-                    <div id="seccion1" data-aos="fade-right" class="flex flex-grow md:w-1/2 flex flex-col justify-center num1">
-                        <span class="text-gray-400 uppercase">Bienvenido/a a mi tienda!</span>
-                        <h1 class="titulo mb-4 mt-2 text-4xl font-bold">Day <span class="profesional-color">Sublime</span></h1>
-                        <p class="text-gray-400">Gracias por venir hasta aquí y conocer más sobre mi trabajo</p>
-                      </div>
-                </div>
-                <div class="text-center lg:flex flex-grow justify-end basis-0">
-                    <div id="seccion2" class="flex flex-grow md:w-1/2 flex flex-col justify-center num1">
-                        <img data-aos="fade-left" class="img-portada" src="./public/img/miskill.png" alt="">
-                      </div>
-                </div>
-            </div> -->
         </div>
-        <div class="fixed">
+        <div class="portada">
             <div class="grid sm:grid-cols-1 lg:grid-cols-2">
-                <div class="presentacion_portada">
-                    <h3 class="presentacion-1"><strong>¡Hola! Soy</strong></h3><br>
-                    <h2 class="presentacion-2"><strong>Miguel</strong> <span><strong>Sarpi</strong></span></h2>
-                    <p class="presentacion-0">Analista programador Jr.</p><br>
-                    <div class="grid-maquina">
-                        <p class="subtitulo">Especializado en:⠀<span class="maquina"></span></p>
-                    </div>
-                    <div class="main-button" >
-                        <a href="assest/download/cv_miguel_sarpi rivero2023.pdf" class="color-boton" download>Descargar CV</a>
-                    </div>
+              <div class="presentacion_portada">
+                <h3 class="presentacion-1"><strong>¡Hola! Soy</strong></h3><br>
+                <h2 class="presentacion-2"><strong>Miguel</strong> <span><strong>Sarpi</strong></span></h2>
+                <p class="presentacion-0">Analista programador Jr.</p><br>
+                <div class="grid-maquina">
+                  <p class="subtitulo">Especializado en: <span class="maquina"></span></p>
                 </div>
-                <div class="image-port">
-                    <div class="relative">
-                        <button onclick="toggleDarkMode()">
-                            <img class="img1 absolute top-0 left-0 z-10 size-image" src="./public/img/portadacolor.png">
-                            <img class="img2 relative z-0 size-image" src="./public/img/portadabyw.png">
-                        </button>
-                        <span class="animolob"></span>
-                      </div>
-                      
-
-                  </div>
-                  
+                <div class="main-button">
+                    <a href="./public/download/Cv-miguel-sarpi-2023.pdf" class="color-boton" download>Descargar CV</a>
+                </div>
+              </div>
+              <div class="image-port">
+                <div class="relative">
+                  <button onclick="toggleDarkMode()">
+                    <img class="img1 absolute top-0 left-0 z-10 size-image" src="./public/img/portadacolor.png">
+                    <img class="img2 relative z-0 size-image" src="./public/img/portadabyw.png">
+                  </button>
+                  <span class="animolob"></span>
+                </div>
+              </div>
             </div>
-        </div>
-
+          </div>
     </main>
 </header>
-<body style="background-color: rgb(237, 237, 237);"></body>
+<body style="background-color: rgb(237, 237, 237); width: 100%; height: 100%">
+    <!-- <img src="./public/img/portada.jpg" alt="" srcset="">
+    <img src="./public/img/portada.jpg" alt="" srcset="">
+    <img src="./public/img/portada.jpg" alt="" srcset=""> -->
+</body>
 <footer></footer>
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script src="./public/js/js.js"></script> 

@@ -19,6 +19,31 @@ function element() {
     menu.classList.toggle('hidden')
 }
 
+// window.addEventListener("load", function() {
+//     window.addEventListener("scroll", function() {
+//     const nav = document.querySelector('.nav-class');
+//       if (window.scrollY > 200) {
+//         // Cambiar el color de fondo a azul
+//         nav.style.backgroundColor = "rgba(0, 0, 0, 0.696)";
+//       } else {
+//         // Cambiar el color de fondo a su valor original
+//         nav.style.backgroundColor = "";
+//       }
+//     });
+// });
+
+var prevScrollpos = window.pageYOffset; // Almacenamos la posición inicial del scroll
+
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset; // Obtenemos la posición actual del scroll
+  if (window.scrollY > 200) {
+    document.getElementById("nav").style.top = "-100px"; // Si el scroll se mueve hacia arriba, mostramos el menú hacia abajo
+  } else {
+    document.getElementById("nav").style.top = "0"; // Si el scroll se mueve hacia abajo, ocultamos el menú hacia arriba
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 /*INICIO-EFECTO DE ESCRITURA*/
 const maquina = new Typed('.maquina', {
     strings: [
@@ -50,7 +75,7 @@ const maquina = new Typed('.maquina', {
 });
 /*FINAL-EFECTO DE ESCRITURA*/
 
-  function toggleDarkMode() {
+function toggleDarkMode() {
     const body = document.querySelector('body');
     const img1 = document.querySelector('.img1');
     const img2 = document.querySelector('.img2');
