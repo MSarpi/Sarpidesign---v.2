@@ -28,12 +28,18 @@ html, body {
 }
 
 .night-mode .presentacion-0{
-    color: #da68b4;
+    color: #eaacd5;
 }
 
 .night-mode .hamburguesa{
     color: rgb(255, 255, 255);
     border-color:rgb(255, 255, 255);
+}
+
+.night-mode .grid-maquina .habilidades {
+    color: #faa5de;
+    -webkit-background-clip: text;
+    
 }
 
 .presentacion{
@@ -284,6 +290,17 @@ html, body {
 }
 
 @media (max-width: 1023px) {
+
+    .night-mode #menu{
+      background-color: rgb(198, 198, 198);
+      padding-bottom: 1rem;
+      width: 100%;
+      height: auto;  
+      border-radius: 0 0 1rem 1rem;
+      color: rgb(0, 0, 0);
+      z-index: 99;
+    }
+
     .animolob{
         top: 50%;
         left: 45%;
@@ -298,7 +315,7 @@ html, body {
     }
 
     #menu {
-      background-color: rgba(0, 0, 0, 0.569);
+      background-color: rgba(0, 0, 0, 0.874);
       padding-bottom: 1rem;
       width: 100%;
       height: auto;  
@@ -356,13 +373,34 @@ html, body {
 
     .presentacion_portada{
         padding-top: 10%; 
-        padding-left: 30%;
+        padding-left: 0;
     }
     
     .image-port {
         padding-top: 5rem;
         padding-left: 4rem;
         justify-content: center;
+    }
+
+    .presentacion-0{
+        text-align: center;
+    }
+    
+    .presentacion-1{
+        text-align: center;
+    }
+      
+    .presentacion-2{
+        text-align: center;
+    }
+
+    .subtitulo{
+        height: 4rem;
+        padding-left: 25%;
+    }
+
+    .main-button{
+        text-align: center;
     }
 
 }
@@ -375,7 +413,7 @@ html, body {
     }
     
     .image-port {
-        padding-top: 5rem;
+        padding-top: 2.4rem;
         padding-left: 0.1rem;
         justify-content: center;
     }
@@ -386,7 +424,7 @@ html, body {
 
     .animolob{
         top: 50%;
-        left: 45%;
+        left: 53%;
         position: absolute;
         height: 70vw;
         width: 70vw;
@@ -397,4 +435,56 @@ html, body {
         z-index: -1;
     }
 
+    .presentacion-0{
+        text-align: center;
+    }
+    
+    .presentacion-1{
+        text-align: center;
+    }
+      
+    .presentacion-2{
+        text-align: center;
+    }
+    
+    .subtitulo{
+        height: 5rem;
+        padding-left: 0;
+    }
+
+    .main-button{
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 320px) {
+
+    .presentacion_portada{
+        padding-top: 20%; 
+        padding-left: 3%;
+    }
+
+    .presentacion-0{
+        text-align: center;
+    }
+    
+    .presentacion-1{
+        text-align: center;
+    }
+      
+    .presentacion-2{
+        text-align: center;
+    }
+    
+    .subtitulo{
+        height: 2.8rem;
+        padding-left: 0;
+        font-size: 1.2rem;
+    }
+
+    .main-button{
+        text-align: center;
+
+    }
 }
