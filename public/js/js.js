@@ -1,5 +1,9 @@
 /*INICIO-EFECTO DE ESCRITURA*/
-
+window.addEventListener('load', () =>{
+    const contenedor_loader = document.querySelector('.contenedor_loader');
+    contenedor_loader.style.opacity = 0
+    contenedor_loader.style.visibility = 'hidden'
+})
 const boton = document.querySelector('#boton');
 const menu = document.querySelector('#menu');
 
