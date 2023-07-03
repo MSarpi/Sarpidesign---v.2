@@ -376,12 +376,12 @@ html, body {
     
     .image-port {
         padding-top: 5rem;
-        padding-left: 3rem !important;
+        padding-left: 0.1rem;
         justify-content: center;
     }
 
     .size-image{
-        width: 110%;
+        width: 100%;
     }
 
     .animolob{
