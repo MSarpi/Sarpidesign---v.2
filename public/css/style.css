@@ -15,6 +15,9 @@ html, body {
     font-size: 2rem;
 }
 
+.size-image{
+    width: 80%;
+}
 .icon-text{
     font-size: 2rem;
 }
@@ -114,7 +117,6 @@ html, body {
 .subtitulo{
     height: 7rem;
     font-size: 3rem;
-    
 }
 
 .color-boton{
@@ -239,9 +241,51 @@ html, body {
     
 }
 
+@media (max-width:1268px){
+    .size-text{
+        font-size: 1rem;
+    }
+
+    .icon-hover {
+        font-size: 1.3rem;
+    } 
+
+    .presentacion_portada{
+        padding-top: 38%; 
+        padding-left: 30%;
+    }
+
+    .presentacion-0{
+        font-size: 1rem;
+    }
+    
+    .presentacion-1{
+        height: .8rem;
+        font-size: 2.5rem;
+    }
+      
+    .presentacion-2{
+        font-size: 2.5rem;
+    }
+    
+    .subtitulo{
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .color-boton{
+        font-size: 1rem;
+    }
+
+    .icon-text{
+        font-size: 1.2rem;
+    }
+    
+}
+
 @media (max-width: 1023px) {
     #menu {
-      background-color: rgba(0, 0, 0, 0.429);
+      background-color: rgba(0, 0, 0, 0.569);
       padding-bottom: 1rem;
       width: 100%;
       height: auto;  
@@ -254,4 +298,77 @@ html, body {
         color: black;
         border-color:black;
     }
+
+    .size-text{
+        font-size: 1rem;
+    }
+
+    .icon-hover {
+        font-size: 1.3rem;
+    } 
+
+    .presentacion_portada{
+        padding-top: 5%; 
+        padding-left: 5%;
+    }
+
+    .presentacion-0{
+        font-size: 1rem;
+    }
+    
+    .presentacion-1{
+        height: .8rem;
+        font-size: 2.5rem;
+    }
+      
+    .presentacion-2{
+        font-size: 2.5rem;
+    }
+    
+    .subtitulo{
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .color-boton{
+        font-size: 1rem;
+    }
+
+    .icon-text{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .presentacion_portada{
+        padding-top: 10%; 
+        padding-left: 30%;
+    }
+    
+    .image-port {
+        padding-top: 5rem;
+        padding-left: 4rem;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .presentacion_portada{
+        padding-top: 20%; 
+        padding-left: 3%;
+    }
+    
+    .image-port {
+        padding-top: 5rem;
+        padding-left: 4rem;
+        justify-content: center;
+    }
+
+    .size-image{
+        width: 100%;
+    }
+
 }
