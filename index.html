@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SarpiDesign</title>
+    <link rel="stylesheet" href="./public/css/aos.css">
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <header>
@@ -27,7 +28,7 @@
 
             <div id='menu' class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto basis-center color-text">
                 <!-- <div class="mt-2 text-md lg:flex-grow ">  
-                    <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#">Sobre mi</a>
+                    <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#sobre_mi">Sobre mi</a>
                     <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#">Habilidades</a>
                     <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#">Proyectos</a>
                     <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover"  href="#">Contactame</a>
@@ -43,7 +44,7 @@
         </div>
         <div class="portada">
             <div class="grid sm:grid-cols-1 lg:grid-cols-2">
-              <div class="presentacion_portada">
+              <div class="presentacion_portada" data-aos="fade-down">
                 <h3 class="presentacion-1"><strong>¡Hola! Soy</strong></h3><br>
                 <h2 class="presentacion-2"><strong>Miguel</strong> <span><strong>Sarpi</strong></span></h2>
                 <p class="presentacion-0">Analista programador Jr.</p><br>
@@ -52,9 +53,11 @@
                 </div>
                 <div class="main-button">
                     <a href="./public/download/Cv-miguel-sarpi-2023.pdf" class="color-boton" download>Descargar CV</a>
+                    <a id="openModalBtn" class="color-boton" onclick="abrir_modal()">Sobre mi</a>
+                    
                 </div>
               </div>
-              <div class="image-port">
+              <div class="image-port" data-aos="fade-up">
                 <div class="relative">
                   <button onclick="toggleDarkMode()">
                     <img class="img1 absolute top-0 left-0 z-10 size-image" src="./public/img/portadacolor.png">
@@ -66,13 +69,62 @@
             </div>
           </div>
     </main>
-</header>
+    <div id="modal" class="modal-position overflow-y-auto fixed overflow-x-hidden inset-0 flex items-center justify-center top-0 z-10 hidden opacity-0 transition-opacity duration-300" style="background-color: rgba(0, 0, 0, 0.3);">
+      <div class="w-full max-w-2xl">
+        <div class="header-class-modal">
+          <h2 class="text-lg font-bold text-center">Sobre mi</h2>
+        </div>
+        <div class="grid flex-auto overflow-y-auto relative p-4 body-class-modal">
+            <div class="flex justify-center items-center top-0 left-0">
+              <!-- Contenido del modal aquí -->
+              Soy Miguel Angel Sarpi Rivero, Analista Programador Computacional graduado en 2019 del Instituto IP CHILE. Mi objetivo es convertirme en un Senior FullStack y ser un gran aporte tanto para mis futuros compañeros de trabajo como para mí mismo como freelancer. Actualmente, me enfoco en fortalecer mis habilidades en el desarrollo web FRONT-END con React.js y Vue.js a través de cursos en Udemy.
+<br>
+              Poseo conocimientos teóricos y prácticos en el campo de la tecnología de la información y las comunicaciones. Además, tengo la capacidad de administrar y operar sistemas informáticos que involucran PHP, Laravel 8, HTML, CSS, JS, jQuery y bases de datos. También tengo experiencia en el mantenimiento de computadoras y notebooks.
+              <br>
+              En mi tiempo libre, disfruto dibujar y crear videojuegos RPG con RPG Maker, así como dar paseos y disfrutar de espacios verdes.
+            </div>
+        </div>
+        <div class="flex justify-end footer-class-modal">
+          
+          <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md" onclick="cerrar_modal()">Aceptar</button>
+        </div>
+      </div>
+    </div>
+    </div>
+</header> 
+<!-- <br> -->
+<!-- <div class="container-fluid" style="height: 50px; background-color: rgb(139, 139, 139);"></div> -->
 <body style="background-color: rgb(237, 237, 237); width: 100%; height: 100%">
-    <!-- <img src="./public/img/portada.jpg" alt="" srcset="">
-    <img src="./public/img/portada.jpg" alt="" srcset="">
-    <img src="./public/img/portada.jpg" alt="" srcset=""> -->
+    <!-- <div class="quien-soy" >
+        <p class="text-center text-4xl pt-4  color-text"><strong>Sobre mi</strong></p>
+        <div id="sobre_mi" class="grid sm:grid-cols-1 lg:grid-cols-2 tarjetas-container">
+            <div class="shadow-lg rounded-lg overflow-hidden tarjeta">
+                <img class="w-full" src="./public/gif/tloz.gif" alt="Imagen de la tarjeta">
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold mb-2">Título de la tarjeta</h3>
+                  <p class="text-gray-700">Contenido de la tarjeta.</p>
+                  <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md">Botón</button>
+                </div>
+              </div>
+              <div class="shadow-lg rounded-lg overflow-hidden tarjeta">
+                <img class="w-full" src="./public/gif/si.gif" alt="Imagen de la tarjeta">
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold mb-2">Título de la tarjeta</h3>
+                  <p class="text-gray-700">Contenido de la tarjeta.</p>
+                  <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md">Botón</button>
+                </div>
+              </div>
+        </div>
+    </div> -->
 </body>
 <footer></footer>
+<script src="./public/js/aos.js"></script>
+<script>
+    AOS.init({
+      duration: 2000 
+    });
+</script>
+
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script src="./public/js/js.js"></script> 
 <script src="./public/js/main.js"></script>

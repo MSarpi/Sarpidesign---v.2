@@ -2,8 +2,8 @@
 html, body {
     max-width: 100% !important;
     overflow-x: hidden !important;
+    scroll-behavior:smooth;
 }
-
 
 .contenedor_loader {
    background-color: #f3f3f3;
@@ -25,18 +25,29 @@ html, body {
     left: 0; /* ubicar en la parte izquierda */
 }
 
-/* .nav-transition {
-    transition: background-color 0.5s ease;
-  } */
+.quien-soy {
+    width: 100%;
+    height: 100vh; 
+    z-index: 1;
+}
 
-  #nav {
-    /* Estilos normales del menú de navegación */
-    transition: top 0.1s; /* Agregamos una transición suave al ocultar o mostrar el menú */
+.tarjetas-container {
+    max-width:800px; /* Ajusta el tamaño máximo según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
   }
-  
-  #nav.hidden {
-    top: -10px; /* Ocultamos el menú hacia arriba */
+  .tarjeta {
+    width: 95%; /* Ajusta el ancho de la tarjeta según tus necesidades */
+    margin: 0 auto; /* Centra la tarjeta horizontalmente dentro del contenedor */
   }
+
+#nav {
+/* Estilos normales del menú de navegación */
+transition: top 0.1s; /* Agregamos una transición suave al ocultar o mostrar el menú */
+}
+
+#nav.hidden {
+top: -10px; /* Ocultamos el menú hacia arriba */
+}
 
 .loader{
     color: #a70070;
@@ -79,12 +90,28 @@ html, body {
 }
 
 .nav-class{
-    z-index: 9999;
+    z-index: 9;
 }
 .titulo-imagen{
     z-index: 2;
 }
 
+.header-class-modal{
+    border-radius:  1rem 1rem 0 0;
+    background-color: #5f0040;
+    color: #f3f3f3;
+    padding: 1rem;
+}
+
+.body-class-modal{
+    background-color: #EDEDED;
+}
+
+.footer-class-modal{
+    background-color: #5f0040;
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+}
 .size-text{
     font-size: 2rem;
     transition: .6s;
@@ -96,6 +123,7 @@ html, body {
     border-radius: 1rem 1rem 1rem 0;
     color: white;
 }
+
 
 .size-image{
     width: 80%;
@@ -124,6 +152,21 @@ html, body {
     
 }
 
+.night-mode .header-class-modal{
+    background-color: #5f0040;
+    color: #f3f3f3;
+}
+
+.night-mode .body-class-modal{
+    background-color: #161616;
+    color: #cbcbcb;
+}
+
+.night-mode .footer-class-modal{
+    background-color: #5f0040;
+    padding: 1rem;
+   
+}
 .presentacion{
     position: absolute;
     top: 0;
@@ -150,6 +193,7 @@ html, body {
 .transition-img {
     transition: all 0.5s ease;
 }
+
 
 .presentacion-0{
     font-size: 2rem;
@@ -257,6 +301,8 @@ html, body {
     max-width: 80%;
     height: auto;
 }
+
+
 
 @media (max-width:2560px){
     .size-text{
@@ -543,6 +589,12 @@ html, body {
         text-align: center;
 
     }
+
+
+}
+
+@media (max-width: 320px) {
+
 }
 
 @media (max-width: 320px) {

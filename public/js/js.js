@@ -1,4 +1,28 @@
 /*INICIO-EFECTO DE ESCRITURA*/
+
+const modal = document.getElementById('modal');
+const body = document.body;
+
+function cerrar_modal() {
+    modal.classList.add('opacity-0');
+    setTimeout(() => {
+      modal.classList.add('hidden');
+      modal.classList.remove('opacity-0');
+      body.style.overflowY = ''; // Deshabilitar el scroll en el body
+    }, 300);
+   
+}
+
+function abrir_modal() {
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+      modal.classList.remove('opacity-0');
+      body.style.overflowY = 'hidden'; // Deshabilitar el scroll en el body
+    }, 0);
+}
+
+
+
 window.addEventListener('load', () =>{
     const contenedor_loader = document.querySelector('.contenedor_loader');
     contenedor_loader.style.opacity = 0
@@ -36,7 +60,7 @@ var prevScrollpos = window.pageYOffset; // Almacenamos la posición inicial del 
 
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset; // Obtenemos la posición actual del scroll
-  if (window.scrollY > 200) {
+  if (window.scrollY > 50) {
     document.getElementById("nav").style.top = "-100px"; // Si el scroll se mueve hacia arriba, mostramos el menú hacia abajo
   } else {
     document.getElementById("nav").style.top = "0"; // Si el scroll se mueve hacia abajo, ocultamos el menú hacia arriba
