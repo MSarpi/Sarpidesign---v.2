@@ -27,13 +27,12 @@
             </div>
 
             <div id='menu' class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto basis-center color-text">
-                <!-- <div class="mt-2 text-md lg:flex-grow ">  
-                    <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#sobre_mi">Sobre mi</a>
-                    <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#">Habilidades</a>
-                    <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#">Proyectos</a>
-                    <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover"  href="#">Contactame</a>
+                <div class="mt-2 text-md lg:flex-grow ">  
+                    <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#habilidades">Habilidades</a>
+                    <!-- <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#">Proyectos</a>
+                    <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover"  href="#">Contactame</a> -->
                 </div>
-                <br> -->
+                <br>
                 <div class="text-center lg:flex flex-grow justify-end basis-0">
                     <a onclick="element()" class="px-3 py-3 text-4xl icon-hover what" href="https://api.whatsapp.com/send?phone=56957326432&text=Hola!%20vengo%20de%20tu%20pagina%20web" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                     <a onclick="element()" class="px-3 py-3 text-4xl icon-hover link" href="https://www.linkedin.com/in/miguel-sarpi/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -78,7 +77,7 @@
             <div class="flex justify-center items-center top-0 left-0">
               <!-- Contenido del modal aquí -->
               Soy Miguel Angel Sarpi Rivero, Analista Programador Computacional graduado en 2019 del Instituto IP CHILE. Mi objetivo es convertirme en un Senior FullStack y ser un gran aporte tanto para mis futuros compañeros de trabajo como para mí mismo como freelancer. Actualmente, me enfoco en fortalecer mis habilidades en el desarrollo web FRONT-END con React.js y Vue.js a través de cursos en Udemy.
-<br>
+              <br>
               Poseo conocimientos teóricos y prácticos en el campo de la tecnología de la información y las comunicaciones. Además, tengo la capacidad de administrar y operar sistemas informáticos que involucran PHP, Laravel 8, HTML, CSS, JS, jQuery y bases de datos. También tengo experiencia en el mantenimiento de computadoras y notebooks.
               <br>
               En mi tiempo libre, disfruto dibujar y crear videojuegos RPG con RPG Maker, así como dar paseos y disfrutar de espacios verdes.
@@ -92,30 +91,189 @@
     </div>
     </div>
 </header> 
-<!-- <br> -->
+<br>
 <!-- <div class="container-fluid" style="height: 50px; background-color: rgb(139, 139, 139);"></div> -->
 <body style="background-color: rgb(237, 237, 237); width: 100%; height: 100%">
-    <!-- <div class="quien-soy" >
-        <p class="text-center text-4xl pt-4  color-text"><strong>Sobre mi</strong></p>
-        <div id="sobre_mi" class="grid sm:grid-cols-1 lg:grid-cols-2 tarjetas-container">
-            <div class="shadow-lg rounded-lg overflow-hidden tarjeta">
-                <img class="w-full" src="./public/gif/tloz.gif" alt="Imagen de la tarjeta">
-                <div class="p-4">
-                  <h3 class="text-xl font-semibold mb-2">Título de la tarjeta</h3>
-                  <p class="text-gray-700">Contenido de la tarjeta.</p>
-                  <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md">Botón</button>
+    <div id="habilidades"class="habilidades-seccion" >
+        <p class="text-center text-4xl pt-4  color-text"><strong>Habilidades</strong></p>
+        <br>
+        <br>
+        <div class="grid sm:grid-cols-1 lg:grid-cols-3 tarjetas-container">
+            <div class="shadow-lg rounded-lg overflow-hidden tarjeta m-1">
+              <div class="p-6 target">
+                <div class="flex justify-center items-center">
+                  <p class="icon-habilidades"><span><i class="fa-solid fa-pen-fancy fa-shake"></i></span></p>
+                  <!-- <img src="./public/img/diesño.png" alt="" width="15%" srcset=""> -->
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-center color-text-card pt-1"><strong>Diseño</strong></h3>
+                <p class=" text-center">Valoro la estructura de contenido simple, los patrones de diseño limpios y las interacciones bien pensadas.</p>
+                <br>
+                <div class="flex justify-center items-center pt-1 pb-1 content-card">
+                  <div class="text-center">
+                    <div class="card">
+                      <div class="card-body">
+                        <p class="">Disfruto diseñando:</p>
+                        <p class="">Web, Aplicaciones, Logotipos y Ilustraciones</p>
+                        <p class="pb-3"> </p>
+                        <hr class="border-gray-600">
+                        <p class=" pt-3">Herramientas de diseño:</p>
+                        <p>Photoshop</p>
+                        <p>MediBang Paint Pro</p>
+                        <p>Sony Vega</p>
+                        <p>Lápiz y papel</p>
+                        <p> </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="shadow-lg rounded-lg overflow-hidden tarjeta">
-                <img class="w-full" src="./public/gif/si.gif" alt="Imagen de la tarjeta">
-                <div class="p-4">
-                  <h3 class="text-xl font-semibold mb-2">Título de la tarjeta</h3>
-                  <p class="text-gray-700">Contenido de la tarjeta.</p>
-                  <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md">Botón</button>
+            </div>
+            <div class="shadow-lg rounded-lg overflow-hidden tarjeta m-1">
+              <div class="p-6 target">
+                <div class="flex justify-center items-center">
+                  <p class="icon-habilidades"><i class="fa-solid fa-computer fa-bounce"></i></p>
+                  <!-- <img src="./public/img/diesño.png" alt="" width="15%" srcset=""> -->
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-center color-text-card pt-1"><strong>Frontend Developer</strong></h3>
+                <p class=" text-center">Me gusta codificar cosas desde cero y disfruto dando vida a las ideas en el navegador.</p>
+                <br>
+                <div class="flex justify-center items-center pt-1 pb-1 content-card">
+                  <div class="text-center">
+                    <div class="card">
+                      <div class="card-body">
+                        <p class="">Lenguajes:</p>
+                        <p class="">HTML, CSS, Git, JavaScript, jQuery, Bootstrap, tailwind,</p>
+                        <p class="pb-3">AJAX</p>
+                        <hr class="border-gray-600">
+                        <p class="pt-3">Herramientas:</p>
+                        <p>Git</p>
+                        <p>Git Bash</p>
+                        <p>Visual Studio Code</p>
+                        <p>ResponsivelyApp</p>
+                        <p> </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+            
+            <div class="shadow-lg rounded-lg overflow-hidden tarjeta m-1">
+              <div class="p-6 target">
+                <div class="flex justify-center items-center">
+                  <p class="icon-habilidades"><i class="fa-solid fa-laptop-code fa-beat"></i></p>
+                  <!-- <img src="./public/img/diesño.png" alt="" width="15%" srcset=""> -->
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-center color-text-card pt-1"><strong>Backend Developer</strong></h3>
+                <p class=" text-center">Me gusta codificar cosas desde cero. tanto para aplicaciones moviles y paginas web's.</p>
+                <br>
+                <div class="flex justify-center items-center pt-1 pb-1 content-card">
+                  <div class="text-center">
+                    <div class="card">
+                      <div class="card-body">
+                        <p class="">Lenguajes:</p>
+                        <p class="">PHP, LARAVEL, MYSQL, Java</p>
+                        <p class="pb-3"> </p>
+                        <hr class="border-gray-600">
+                        <p class="pt-3">Herramientas:</p>
+                        <p>Dbeaver</p>
+                        <p>Android Studio</p>
+                        <p>Visual Studio Code</p>
+                        <p>Git</p>
+                        <p>Gitbash</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-    </div> -->
+    </div>
+    <!-- <div id="habilidades"class="habilidades-seccion" >
+      <p class="text-center text-4xl pt-4  color-text"><strong>Habilidades</strong></p>
+      <br>
+      <br>
+      <div class="grid sm:grid-cols-1 lg:grid-cols-3 tarjetas-container">
+          <div class="shadow-lg rounded-lg overflow-hidden tarjeta">
+            <div class="p-6 target">
+              <div class="flex justify-center items-center">
+                <img src="./public/img/diesño.png" alt="" width="15%" srcset="">
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-center color-text-card pt-1"><strong>Diseño</strong></h3>
+              <p class="text-gray-700 text-center">Valoro la estructura de contenido simple, los patrones de diseño limpios y las interacciones bien pensadas.</p>
+              <br>
+              <div class="flex justify-center items-center pt-1 pb-1 content-card">
+                <div class="text-center">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="text-gray-600">Disfruto diseñando:</p>
+                      <p class="pb-3">Web, Aplicaciones, Logotipos y Ilustraciones</p>
+                      <hr class="border-gray-600">
+                      <p class="text-gray-600 pt-3">Herramientas de diseño:</p>
+                      <p>Photoshop</p>
+                      <p>MediBang Paint Pro</p>
+                      <p>Sony Vega</p>
+                      <p>Lápiz y papel</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-lg rounded-lg overflow-hidden tarjeta">
+            <div class="p-6 target">
+              <div class="flex justify-center items-center">
+                <img src="./public/img/diesño.png" alt="" width="15%" srcset="">
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-center color-text-card pt-1"><strong>Diseño</strong></h3>
+              <p class="text-gray-700 text-center">Valoro la estructura de contenido simple, los patrones de diseño limpios y las interacciones bien pensadas.</p>
+              <br>
+              <div class="flex justify-center items-center pt-1 pb-1" style="background-color: rgb(237, 237, 237)">
+                <div class="text-center">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="text-gray-600">Disfruto diseñando:</p>
+                      <p class="pb-3">Web, Aplicaciones, Logotipos y Ilustraciones</p>
+                      <hr class="border-gray-600">
+                      <p class="text-gray-600 pt-3">Herramientas de diseño:</p>
+                      <p>Photoshop</p>
+                      <p>MediBang Paint Pro</p>
+                      <p>Sony Vega</p>
+                      <p>Lápiz y papel</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-lg rounded-lg overflow-hidden tarjeta">
+            <div class="p-6 target">
+              <div class="flex justify-center items-center">
+                <img src="./public/img/diesño.png" alt="" width="15%" srcset="">
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-center color-text-card pt-1"><strong>Diseño</strong></h3>
+              <p class="text-gray-700 text-center">Valoro la estructura de contenido simple, los patrones de diseño limpios y las interacciones bien pensadas.</p>
+              <br>
+              <div class="flex justify-center items-center pt-1 pb-1" style="background-color: rgb(237, 237, 237)">
+                <div class="text-center">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="text-gray-600">Disfruto diseñando:</p>
+                      <p class="pb-3">Web, Aplicaciones, Logotipos y Ilustraciones</p>
+                      <hr class="border-gray-600">
+                      <p class="text-gray-600 pt-3">Herramientas de diseño:</p>
+                      <p>Photoshop</p>
+                      <p>MediBang Paint Pro</p>
+                      <p>Sony Vega</p>
+                      <p>Lápiz y papel</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div> -->
 </body>
 <footer></footer>
 <script src="./public/js/aos.js"></script>
