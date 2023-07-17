@@ -28,7 +28,9 @@
 
             <div id='menu' class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto basis-center color-text">
                 <div class="mt-2 text-md lg:flex-grow ">  
-                    <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#habilidades">Habilidades</a>
+                    <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#habilidades">Mis Habilidades</a>
+                    <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#empresas">Empresas</a> 
+                    <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#proyectos">Mis Proyectos</a> 
                     <!-- <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#">Proyectos</a>
                     <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover"  href="#">Contactame</a> -->
                 </div>
@@ -71,9 +73,9 @@
     <div id="modal" class="modal-position overflow-y-auto fixed overflow-x-hidden inset-0 flex items-center justify-center top-0 z-10 hidden opacity-0 transition-opacity duration-300" style="background-color: rgba(0, 0, 0, 0.3);">
       <div class="w-full max-w-2xl">
         <div class="header-class-modal">
-          <h2 class="text-lg font-bold text-center">Sobre mi</h2>
+          <h2 class="text-lg font-bold text-center" >Sobre mi</h2>
         </div>
-        <div class="grid flex-auto overflow-y-auto relative p-4 body-class-modal">
+        <div class="grid flex-auto overflow-y-auto relative body-class-modal">
             <div class="flex justify-center items-center top-0 left-0">
               <!-- Contenido del modal aquí -->
               Soy Miguel Angel Sarpi Rivero, Analista Programador Computacional graduado en 2019 del Instituto IP CHILE. Mi objetivo es convertirme en un Senior FullStack y ser un gran aporte tanto para mis futuros compañeros de trabajo como para mí mismo como freelancer. Actualmente, me enfoco en fortalecer mis habilidades en el desarrollo web FRONT-END con React.js y Vue.js a través de cursos en Udemy.
@@ -94,12 +96,12 @@
 <br>
 <!-- <div class="container-fluid" style="height: 50px; background-color: rgb(139, 139, 139);"></div> -->
 <body style="background-color: rgb(237, 237, 237); width: 100%; height: 100%">
-    <div id="habilidades"class="habilidades-seccion" >
-        <p class="text-center text-4xl pt-4  color-text"><strong>Habilidades</strong></p>
+    <section id="habilidades"class="habilidades-seccion" >
+        <p class="text-center text-4xl pt-4  color-text" data-aos="zoom-in"><strong>Mis <span class="title-color">Habilidades</span></strong></p>
         <br>
         <br>
-        <div class="grid sm:grid-cols-1 lg:grid-cols-3 tarjetas-container">
-            <div class="shadow-lg rounded-lg overflow-hidden tarjeta m-1">
+        <div class="grid sm:grid-cols-1 lg:grid-cols-3 tarjetas-container pb-1">
+            <div class="shadow-lg rounded-lg overflow-hidden tarjeta m-1" data-aos="zoom-out-down">
               <div class="p-6 target">
                 <div class="flex justify-center items-center">
                   <p class="icon-habilidades"><span><i class="fa-solid fa-pen-fancy fa-shake"></i></span></p>
@@ -128,7 +130,7 @@
                 </div>
               </div>
             </div>
-            <div class="shadow-lg rounded-lg overflow-hidden tarjeta m-1">
+            <div class="shadow-lg rounded-lg overflow-hidden tarjeta m-1" data-aos="zoom-out-down">
               <div class="p-6 target">
                 <div class="flex justify-center items-center">
                   <p class="icon-habilidades"><i class="fa-solid fa-computer fa-bounce"></i></p>
@@ -158,7 +160,7 @@
               </div>
             </div>
             
-            <div class="shadow-lg rounded-lg overflow-hidden tarjeta m-1">
+            <div class="shadow-lg rounded-lg overflow-hidden tarjeta m-1" data-aos="zoom-out-down">
               <div class="p-6 target">
                 <div class="flex justify-center items-center">
                   <p class="icon-habilidades"><i class="fa-solid fa-laptop-code fa-beat"></i></p>
@@ -188,7 +190,135 @@
               </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="empresas" class="empresas-seccion pt-20" >
+      <p class="text-center text-4xl pt-4  color-text pb-2" data-aos="zoom-in"><strong><span class="title-color">Empresas</span></strong></p>
+      <p class="text-center text-2xl" data-aos="zoom-in">Estas son las empresas a las que he dado mis servicios como Programador.</p> 
+      <br>
+      <br>
+      <div class="grid sm:grid-cols-1 lg:grid-cols-2 tarjetas-container pb-1" >
+        <div class="relative" data-aos="flip-left">
+          <a href="https://sitio.consorcio.cl/home" target="_blank" rel="noopener noreferrer"><img class="img3 absolute top-0 left-0 z-10  size-image justify-center items-center" src="./public/img/consorcio.png" alt="" ></a>
+          <a href="https://sitio.consorcio.cl/home" target="_blank" rel="noopener noreferrer"><img class="img4 relative z-0  size-image justify-center items-center" src="./public/img/consorciobw.png"></a>
+        </div>
+        <div class="relative" data-aos="flip-right">
+          <a href="https://mastransporte.cl/" target="_blank" rel="noopener noreferrer"><img class="img5 absolute top-0 left-0 z-10  size-image justify-center items-center"src="./public/img/mastransporte.png" alt="" ></a>
+          <a href="https://mastransporte.cl/" target="_blank" rel="noopener noreferrer"><img class="img6 relative z-0  size-image justify-center items-center" src="./public/img/mastransportebw.png" alt="" ></a>
+        </div>
+      </div>
+    </section>
+    <section id="proyectos" class="empresas-seccion pt-20" >
+      <p class="text-center text-4xl pt-4  color-text pb-2" data-aos="zoom-in"><strong>Mis <span class="title-color">Proyectos</span> y <span class="title-color">Trabajos</span></strong></p>
+      <p class="text-center text-2xl" data-aos="zoom-in">Acá estan cada proyectos propios y trabajos que hecho a algunas empresas.</p> 
+      <br>
+      <br>
+      <div class="grid sm:grid-cols-1 lg:grid-cols-3 tarjetas-container pb-1">
+        <div class="bg-white shadow-md rounded-md m-2 card-proyectos" data-aos="fade-up-right">
+          <img src="./public/img/calculadora.png" alt="Imagen" class="w-full h-42 mb-4">
+          <div class="pt-2 pl-2 pr-2 pb-1" >
+            <h3 class="text-xl font-bold mb-2">Calculadora</h3>
+            <p>Un desarrollo basico en el cual se muestra los parametros matematicos con una simple interfaz inspirada en la calculadora de Apple.ﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠ</p>
+            <br>
+            <hr class="border-gray-600 pb-1">
+            <div class="grid grid-cols-2 text-center">
+              <a href="https://github.com/MSarpi/Calculadora.git" target="_blank">
+                <span class="inline-block mx-auto color-icon-project git"><i class="fa-brands fa-github"></i></span>
+              </a>
+              <a href="https://calculadora-sarpidesign.netlify.app/" target="_blank">
+                <span class="inline-block mx-auto color-icon-project internet"><i class="fa-brands fa-internet-explorer"></i></span>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-md  m-2 card-proyectos" data-aos="fade-up">
+          <img src="./public/img/myvoz.png" alt="Imagen" class="w-full h-42 mb-4">
+          <div class="p-2">
+            <h3 class="text-xl font-bold mb-2">MyVoz</h3>
+            <p>Myvoz es una aplicacion hecha por mi, esta dedicada para personas con problemas auditivos y vocal y asi lograr que se puedan comunicar con personas que no saben lenguas de señas.</p>
+            <br>
+            <hr class="border-gray-600 pb-1">
+            <div class="grid grid-cols-1 text-center">
+              <a href="https://play.google.com/store/apps/details?id=app.design.myvoice" target="_blank">
+                <span class="inline-block mx-auto color-icon-project play-store"><i class="fa-brands fa-google-play"></i></span>
+              </a>
+              <!-- <a href="http://" target="_blank">
+                <span class="inline-block mx-auto color-icon-project internet"><i class="fa-brands fa-internet-explorer"></i></span>
+              </a> -->
+            </div>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-md  m-2 card-proyectos" data-aos="fade-up-left">
+          <img src="./public/img/mastransporteport.png" alt="Imagen" class="w-full h-42 mb-4">
+          <div class="p-2">
+            <h3 class="text-xl font-bold mb-2">Mastransporte</h3>
+            <p>Contenido sobre envios o despachos de paqueteria o bultos a nivel nacional para tiendas ecommerce, empresas y negocios. Todo lo que necesitas para gestionar tus envios y despachos.</p>
+            <br>
+            <hr class="border-gray-600">
+            <div class="grid grid-cols-1 text-center">
+              <!-- <a href="http://" target="_blank">
+                <span class="inline-block mx-auto color-icon-project git"><i class="fa-brands fa-github"></i></span>
+              </a> -->
+              <a href="https://mastransporte.cl/" target="_blank">
+                <span class="inline-block mx-auto color-icon-project internet"><i class="fa-brands fa-internet-explorer"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-md  m-2 card-proyectos" >
+          <img src="./public/img/miprimeraweb.png" alt="Imagen" class="w-full h-42 mb-4">
+          <div class="p-2">
+            <h3 class="text-xl font-bold mb-2">Rabbit Design</h3>
+            <p >Mi primer portafolio, está totalmente hecho con HTML, CSS Y Responsivo de forma manual, sin framework o atajos que hacen la creación de una pagina más fácil.ﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠ</p>
+            <br>
+            <hr class="border-gray-600">
+            <div class="grid grid-cols-2 text-center card-proyectos">
+              <a href="https://github.com/MSarpi/Rabbits.git" target="_blank">
+                <span class="inline-block mx-auto color-icon-project git"><i class="fa-brands fa-github"></i></span>
+              </a>
+              <a href="https://rabbitsdesign.netlify.app/" target="_blank">
+                <span class="inline-block mx-auto color-icon-project internet"><i class="fa-brands fa-internet-explorer"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-md  m-2 card-proyectos" >
+          <img src="./public/gif/tloz.gif" alt="Imagen" class="w-full h-42 mb-4">
+          <div class="p-2">
+            <h3 class="text-xl font-bold mb-2">The legend of Zelda</h3>
+            <p>Video juego usando Kaboom.js Se trata del famoso video juego Tloz de Snes, demostrando un pequeño sistema de coliciones y de ataque. se uso en base a Html, Css y Js.ﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠ</p>
+            <br>
+            <hr class="border-gray-600">
+            <div class="grid grid-cols-2 text-center">
+              <a href="https://github.com/MSarpi/TLOZ-Custoom.git" target="_blank">
+                <span class="inline-block mx-auto color-icon-project git"><i class="fa-brands fa-github"></i></span>
+              </a>
+              <a href="https://thelegendofzelda-custom.netlify.app/" target="_blank">
+                <span class="inline-block mx-auto color-icon-project internet"><i class="fa-brands fa-internet-explorer"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-md  m-2 card-proyectos" >
+          <img src="./public/gif/si.gif" alt="Imagen" class="w-full h-42 mb-4">
+          <div class="p-2">
+            <h3 class="text-xl font-bold mb-2">Space Invaders</h3>
+            <p>Video juego usando Kaboom.js Se trata del famoso video juego de disparos, demostrando un pequeño sistema de movimientos latertales y lanzamientos de proyectiles. se uso en base a Html, Css y Js.</p>
+            <br>
+            <hr class="border-gray-600">
+            <div class="grid grid-cols-2 text-center">
+              <a href="https://github.com/MSarpi/SpaceInvaders.git" target="_blank">
+                <span class="inline-block mx-auto color-icon-project git"><i class="fa-brands fa-github"></i></span>
+              </a>
+              <a href="https://spaceinvaders-custom.netlify.app/" target="_blank">
+                <span class="inline-block mx-auto color-icon-project internet"><i class="fa-brands fa-internet-explorer"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- <div id="habilidades"class="habilidades-seccion" >
       <p class="text-center text-4xl pt-4  color-text"><strong>Habilidades</strong></p>
       <br>

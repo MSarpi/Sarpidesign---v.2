@@ -137,6 +137,10 @@ top: -10px; /* Ocultamos el menú hacia arriba */
 }
 
 .body-class-modal{
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
     background-color: #EDEDED;
 }
 
@@ -171,8 +175,9 @@ top: -10px; /* Ocultamos el menú hacia arriba */
 
 .night-mode {
     background-color: rgb(27, 27, 27) !important;
-    color: #fff;
+    color: #c8c8c8;
 }
+
 
 .night-mode .icon-habilidades{
     color: #e862bb;
@@ -231,6 +236,17 @@ top: -10px; /* Ocultamos el menú hacia arriba */
     color: #e8e8e8;
 }
 
+.night-mode .card-proyectos{
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.night-mode .title-color{
+    background: linear-gradient(to right, #e60099, #f864c7); /* Establece el gradiente */
+    -webkit-background-clip: text; /* Aplica el degradado solo al texto */
+    background-clip: text; /* Aplica el degradado solo al texto */
+    color: transparent; /* Hace que el texto sea transparente */
+}
+
 .presentacion{
     position: absolute;
     top: 0;
@@ -252,6 +268,28 @@ top: -10px; /* Ocultamos el menú hacia arriba */
     padding-left: 4rem;
     justify-content: center;
 }
+
+.color-icon-project{
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.color-icon-project:hover{
+    transform: scale(1.2);
+}
+
+.git:hover{
+    color: orange;
+}
+
+.internet:hover{
+    color:#0A66C2;
+}
+
+.play-store:hover{
+    color:#00a133;
+}
+
 
 
 .transition-img {
@@ -287,6 +325,12 @@ top: -10px; /* Ocultamos el menú hacia arriba */
     z-index: -1;
 }
 
+.title-color{
+    background: linear-gradient(to right, #550039, #bb007d); /* Establece el gradiente */
+    -webkit-background-clip: text; /* Aplica el degradado solo al texto */
+    background-clip: text; /* Aplica el degradado solo al texto */
+    color: transparent; /* Hace que el texto sea transparente */
+}
   @keyframes animate_blod{
     0%, 100%{
       border-radius: 45% 55% 70% 35% / 70% 30% 90% 40%;
@@ -657,8 +701,10 @@ top: -10px; /* Ocultamos el menú hacia arriba */
 
 }
 
-@media (max-width: 320px) {
-
+@media (max-width: 375px) {
+    .habilidades-seccion{
+        margin-top: 10rem;
+    }
 }
 
 @media (max-width: 320px) {

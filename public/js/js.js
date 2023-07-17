@@ -103,20 +103,32 @@ function toggleDarkMode() {
     const body = document.querySelector('body');
     const img1 = document.querySelector('.img1');
     const img2 = document.querySelector('.img2');
+    const img3 = document.querySelector('.img3');
+    const img4 = document.querySelector('.img4');
+    const img5 = document.querySelector('.img5');
+    const img6 = document.querySelector('.img6');
     
     body.classList.toggle('night-mode');
     
     if (body.classList.contains('night-mode')) {
         body.style.transition = 'background-color 0.5s ease-in-out, color 0.5s ease-in-out';
-		img1.style.opacity = '0';
-		img2.style.opacity = '1';
-		img1.classList.add('transition-img');
-		img2.classList.add('transition-img');
+        img1.style.opacity = '0';
+        img2.style.opacity = '1';
+        img3.style.opacity = '0';
+        img4.style.opacity = '1';
+        img5.style.opacity = '0';
+        img6.style.opacity = '1';
+        img1.classList.add('transition-img');
+        img2.classList.add('transition-img');
     } else {
         body.style.transition = 'background-color 0.5s ease-in-out, color 0.5s ease-in-out';
-		img1.style.opacity = '1';
-		img2.style.opacity = '0';
-		img1.classList.add('transition-img');
-		img2.classList.add('transition-img');
+        img1.style.opacity = '1';
+        img2.style.opacity = '0';
+        img3.style.opacity = '1';
+        img4.style.opacity = '0';
+        img5.style.opacity = '1';
+        img6.style.opacity = '0';
+        img1.classList.add('transition-img');
+        img2.classList.add('transition-img');
     }
 }
