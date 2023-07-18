@@ -34,6 +34,7 @@
                     <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#habilidades">Mis Habilidades</a>
                     <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#empresas">Empresas</a> 
                     <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#proyectos">Mis Proyectos</a> 
+                    <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#contactame">Contactame</a>
                     <!-- <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover" href="#">Proyectos</a>
                     <a onclick="element()" class="px-4 block text-center lg:inline-block mr-4 seccion size-text span-hover"  href="#">Contactame</a> -->
                 </div>
@@ -323,13 +324,13 @@
       </div>
     </section>
 
-    <section id="proyectos" class="empresas-seccion pt-20" >
+    <section id="contactame" class="contactame-seccion pt-20" >
       <p class="text-center text-4xl pt-4  color-text pb-2" data-aos="zoom-in"><strong><span class="title-color">Contactame</span></strong></p>
       <p class="text-center text-2xl" data-aos="zoom-in">Acá estan cada proyectos propios y trabajos que hecho a algunas empresas.</p> 
       <br>
       <br>
-      <div class="flex flex-col justify-center items-center">
-        <form class="w-full max-w-md">
+      <div class="flex flex-col justify-center items-center " data-aos="flip-right">
+        <form class=" caja-contacto">
           <div class="mb-6">
               <input name="email" id="email" placeholder="Ingrese su correo" type="email"
                   class="w-full border border-gray-300 rounded py-2 px-3 placeholder-gray-500 text-gray-900">
@@ -344,16 +345,21 @@
                   id="textarea" name="textarea" rows="3"></textarea>
           </div>
           <div>
+            <center>
               <button type="button"
-                  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                  id="miformulario" onclick="formulario()">
+                  class="btn-contact rounded" id="miformulario" onclick="formulario()">
                   Enviar
               </button>
+            </center>
+
           </div>
       </form>
 
       </div>
     </section>
+    <div id="toastr" class="hidden bg-fuchsia-800 text-white p-3 text-3xl fixed top-0 right-0 mt-16 mr-4 rounded shadow-lg z-50">
+      Toastr message here
+    </div>
 </body>
     <!-- Footer -->
     <footer class="text-white py-6 footer-design">
@@ -374,7 +380,6 @@
           <p class="text-center mt-4 color-footer">&copy; 2023 SarpiDesign. Todos los derechos reservados.</p>
       </div>
   </footer>
-<footer></footer>
 <script src="./public/js/aos.js"></script>
 <script>
     AOS.init({

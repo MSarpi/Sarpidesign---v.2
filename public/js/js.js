@@ -78,7 +78,6 @@ const maquina = new Typed('.maquina', {
 		'<i class="habilidades">MySql</i>',
         '<i class="habilidades">CSS</i>',
         '<i class="habilidades">Ilustración</i>',
-        '<i class="habilidades">Wordpress</i>',
         '<i class="habilidades">Photoshop</i>',
 		'<i class="habilidades">Git</i>',
         '<i class="habilidades">Bootstrap</i>',
@@ -174,10 +173,19 @@ function formulario(){
 				Informacion: text
 			},
 			success: function (res) {
-				
+				//alert(JSON.stringify(res));
 			},
 			error:function (erro) {
-                alert("no sube");
+                //alert(JSON.stringify(erro));
+                document.getElementById("email").value = "";
+                document.getElementById("name").value = "";
+                document.getElementById("textarea").value = "";
+                const toastr = document.getElementById("toastr");
+                toastr.textContent = "¡Mensaje enviado!";
+                toastr.classList.remove("hidden");
+                setTimeout(function () {
+                  toastr.classList.add("hidden");
+                }, 3000);
 			}
 		});
 	}else{
