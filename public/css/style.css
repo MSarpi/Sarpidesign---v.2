@@ -430,7 +430,7 @@ top: -10px; /* Ocultamos el menú hacia arriba */
     font-size: 1rem;
     color: #f3f3f3;
     padding: 10px 20px;
-    background: linear-gradient(to right, #bb007d, #550039);
+    background: linear-gradient(to right, #bb007d, #550039); 
     border: none;
     border-radius: 10px;  
     cursor: pointer;
