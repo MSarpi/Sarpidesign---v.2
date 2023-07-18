@@ -44,7 +44,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .habilidades-seccion {
     width: 100%;
-    z-index: 1;
+
 }
 
 .tarjetas-container {
@@ -262,8 +262,8 @@ top: -10px; /* Ocultamos el menú hacia arriba */
     background-color: rgb(70, 70, 70);
 }
 
-.hidden-up{
-    display: none;
+.ba{
+    z-index: 99999999999;
 }
 .night-mode .btn-contact{
     text-decoration: none;

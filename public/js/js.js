@@ -21,6 +21,7 @@ scrollToTopBtn.addEventListener("click", () => {
 window.addEventListener("load", () => {
   window.dispatchEvent(new Event("scroll"));
 });
+
 const modal = document.getElementById('modal');
 const body = document.body;
 
