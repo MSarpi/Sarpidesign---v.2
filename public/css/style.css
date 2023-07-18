@@ -262,6 +262,9 @@ top: -10px; /* Ocultamos el menú hacia arriba */
     background-color: rgb(70, 70, 70);
 }
 
+.hidden-up{
+    display: none;
+}
 .night-mode .btn-contact{
     text-decoration: none;
     font-size: 1rem;

@@ -4,8 +4,10 @@ const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 window.addEventListener("scroll", () => {
   if (window.scrollY > window.innerHeight * 0.2) {
     scrollToTopBtn.style.opacity = "1";
+    toastr.classList.add("hidden-up");
   } else {
     scrollToTopBtn.style.opacity = "0";
+    toastr.classList.remove("hidden-up");
   }
 });
 
