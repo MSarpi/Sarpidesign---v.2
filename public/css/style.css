@@ -161,6 +161,9 @@ top: -10px; /* Ocultamos el menú hacia arriba */
     color: white;
 }
 
+.footer-design{
+    background-color: white;
+}
 
 .size-image{
     width: 80%;
@@ -247,6 +250,18 @@ top: -10px; /* Ocultamos el menú hacia arriba */
     color: transparent; /* Hace que el texto sea transparente */
 }
 
+.night-mode .footer-design{
+    background: rgb(0, 0, 0);
+}
+
+.night-mode .color-footer{
+    color: white !important;
+}
+
+.color-footer{
+    color: rgb(0, 0, 0) !important;
+}
+
 .presentacion{
     position: absolute;
     top: 0;
@@ -257,6 +272,26 @@ top: -10px; /* Ocultamos el menú hacia arriba */
     background-size: cover; 
 }
 
+
+#loading-screen {
+    justify-content: center;
+    background-color: rgba(25,25,25,0.7);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    margin-top: 0;
+    top: 0;
+    text-align: center;
+}
+
+#loading-screen img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+  
 .presentacion_portada{
     padding-top: 30%; 
     padding-left: 40%;

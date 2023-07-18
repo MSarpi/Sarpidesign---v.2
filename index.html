@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <header>
+  <div id="loading-screen" class="flex flex-col justify-center items-center" style="display: none;">
+    <img src="./public/img/spinning-circles.svg">
+  </div>
     <main class="full-screen">
         <div class="contenedor_loader">
             <div class="loader"></div>
@@ -101,7 +104,7 @@
         <br>
         <br>
         <div class="grid sm:grid-cols-1 lg:grid-cols-3 tarjetas-container pb-1">
-            <div class="shadow-lg rounded-lg overflow-hidden tarjeta m-1" data-aos="zoom-out-down">
+            <div class="shadow-lg rounded-lg overflow-hidden tarjeta m-1" data-aos="flip-left">
               <div class="p-6 target">
                 <div class="flex justify-center items-center">
                   <p class="icon-habilidades"><span><i class="fa-solid fa-pen-fancy fa-shake"></i></span></p>
@@ -130,7 +133,7 @@
                 </div>
               </div>
             </div>
-            <div class="shadow-lg rounded-lg overflow-hidden tarjeta m-1" data-aos="zoom-out-down">
+            <div class="shadow-lg rounded-lg overflow-hidden tarjeta m-1" data-aos="flip-left">
               <div class="p-6 target">
                 <div class="flex justify-center items-center">
                   <p class="icon-habilidades"><i class="fa-solid fa-computer fa-bounce"></i></p>
@@ -160,7 +163,7 @@
               </div>
             </div>
             
-            <div class="shadow-lg rounded-lg overflow-hidden tarjeta m-1" data-aos="zoom-out-down">
+            <div class="shadow-lg rounded-lg overflow-hidden tarjeta m-1" data-aos="flip-left">
               <div class="p-6 target">
                 <div class="flex justify-center items-center">
                   <p class="icon-habilidades"><i class="fa-solid fa-laptop-code fa-beat"></i></p>
@@ -217,7 +220,7 @@
         <div class="bg-white shadow-md rounded-md m-2 card-proyectos" data-aos="fade-up-right">
           <img src="./public/img/calculadora.png" alt="Imagen" class="w-full h-42 mb-4">
           <div class="pt-2 pl-2 pr-2 pb-1" >
-            <h3 class="text-xl font-bold mb-2">Calculadora</h3>
+            <h3 class="text-xl font-bold mb-2 text-center">Calculadora</h3>
             <p>Un desarrollo basico en el cual se muestra los parametros matematicos con una simple interfaz inspirada en la calculadora de Apple.ﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠ</p>
             <br>
             <hr class="border-gray-600 pb-1">
@@ -235,7 +238,7 @@
         <div class="bg-white shadow-md rounded-md  m-2 card-proyectos" data-aos="fade-up">
           <img src="./public/img/myvoz.png" alt="Imagen" class="w-full h-42 mb-4">
           <div class="p-2">
-            <h3 class="text-xl font-bold mb-2">MyVoz</h3>
+            <h3 class="text-xl font-bold mb-2 text-center" >MyVoz</h3>
             <p>Myvoz es una aplicacion hecha por mi, esta dedicada para personas con problemas auditivos y vocal y asi lograr que se puedan comunicar con personas que no saben lenguas de señas.</p>
             <br>
             <hr class="border-gray-600 pb-1">
@@ -252,7 +255,7 @@
         <div class="bg-white shadow-md rounded-md  m-2 card-proyectos" data-aos="fade-up-left">
           <img src="./public/img/mastransporteport.png" alt="Imagen" class="w-full h-42 mb-4">
           <div class="p-2">
-            <h3 class="text-xl font-bold mb-2">Mastransporte</h3>
+            <h3 class="text-xl font-bold mb-2 text-center">Mastransporte</h3>
             <p>Contenido sobre envios o despachos de paqueteria o bultos a nivel nacional para tiendas ecommerce, empresas y negocios. Todo lo que necesitas para gestionar tus envios y despachos.</p>
             <br>
             <hr class="border-gray-600">
@@ -269,7 +272,7 @@
         <div class="bg-white shadow-md rounded-md  m-2 card-proyectos" >
           <img src="./public/img/miprimeraweb.png" alt="Imagen" class="w-full h-42 mb-4">
           <div class="p-2">
-            <h3 class="text-xl font-bold mb-2">Rabbit Design</h3>
+            <h3 class="text-xl font-bold mb-2 text-center">Rabbit Design</h3>
             <p >Mi primer portafolio, está totalmente hecho con HTML, CSS Y Responsivo de forma manual, sin framework o atajos que hacen la creación de una pagina más fácil.ﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠ</p>
             <br>
             <hr class="border-gray-600">
@@ -286,7 +289,7 @@
         <div class="bg-white shadow-md rounded-md  m-2 card-proyectos" >
           <img src="./public/gif/tloz.gif" alt="Imagen" class="w-full h-42 mb-4">
           <div class="p-2">
-            <h3 class="text-xl font-bold mb-2">The legend of Zelda</h3>
+            <h3 class="text-xl font-bold mb-2 text-center">The legend of Zelda</h3>
             <p>Video juego usando Kaboom.js Se trata del famoso video juego Tloz de Snes, demostrando un pequeño sistema de coliciones y de ataque. se uso en base a Html, Css y Js.ﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠ</p>
             <br>
             <hr class="border-gray-600">
@@ -303,7 +306,7 @@
         <div class="bg-white shadow-md rounded-md  m-2 card-proyectos" >
           <img src="./public/gif/si.gif" alt="Imagen" class="w-full h-42 mb-4">
           <div class="p-2">
-            <h3 class="text-xl font-bold mb-2">Space Invaders</h3>
+            <h3 class="text-xl font-bold mb-2 text-center" >Space Invaders</h3>
             <p>Video juego usando Kaboom.js Se trata del famoso video juego de disparos, demostrando un pequeño sistema de movimientos latertales y lanzamientos de proyectiles. se uso en base a Html, Css y Js.</p>
             <br>
             <hr class="border-gray-600">
@@ -319,97 +322,63 @@
         </div>
       </div>
     </section>
-    <!-- <div id="habilidades"class="habilidades-seccion" >
-      <p class="text-center text-4xl pt-4  color-text"><strong>Habilidades</strong></p>
+
+    <section id="proyectos" class="empresas-seccion pt-20" >
+      <p class="text-center text-4xl pt-4  color-text pb-2" data-aos="zoom-in"><strong><span class="title-color">Contactame</span></strong></p>
+      <p class="text-center text-2xl" data-aos="zoom-in">Acá estan cada proyectos propios y trabajos que hecho a algunas empresas.</p> 
       <br>
       <br>
-      <div class="grid sm:grid-cols-1 lg:grid-cols-3 tarjetas-container">
-          <div class="shadow-lg rounded-lg overflow-hidden tarjeta">
-            <div class="p-6 target">
-              <div class="flex justify-center items-center">
-                <img src="./public/img/diesño.png" alt="" width="15%" srcset="">
-              </div>
-              <h3 class="text-xl font-semibold mb-2 text-center color-text-card pt-1"><strong>Diseño</strong></h3>
-              <p class="text-gray-700 text-center">Valoro la estructura de contenido simple, los patrones de diseño limpios y las interacciones bien pensadas.</p>
-              <br>
-              <div class="flex justify-center items-center pt-1 pb-1 content-card">
-                <div class="text-center">
-                  <div class="card">
-                    <div class="card-body">
-                      <p class="text-gray-600">Disfruto diseñando:</p>
-                      <p class="pb-3">Web, Aplicaciones, Logotipos y Ilustraciones</p>
-                      <hr class="border-gray-600">
-                      <p class="text-gray-600 pt-3">Herramientas de diseño:</p>
-                      <p>Photoshop</p>
-                      <p>MediBang Paint Pro</p>
-                      <p>Sony Vega</p>
-                      <p>Lápiz y papel</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="flex flex-col justify-center items-center">
+        <form class="w-full max-w-md">
+          <div class="mb-6">
+              <input name="email" id="email" placeholder="Ingrese su correo" type="email"
+                  class="w-full border border-gray-300 rounded py-2 px-3 placeholder-gray-500 text-gray-900">
           </div>
-          <div class="shadow-lg rounded-lg overflow-hidden tarjeta">
-            <div class="p-6 target">
-              <div class="flex justify-center items-center">
-                <img src="./public/img/diesño.png" alt="" width="15%" srcset="">
-              </div>
-              <h3 class="text-xl font-semibold mb-2 text-center color-text-card pt-1"><strong>Diseño</strong></h3>
-              <p class="text-gray-700 text-center">Valoro la estructura de contenido simple, los patrones de diseño limpios y las interacciones bien pensadas.</p>
-              <br>
-              <div class="flex justify-center items-center pt-1 pb-1" style="background-color: rgb(237, 237, 237)">
-                <div class="text-center">
-                  <div class="card">
-                    <div class="card-body">
-                      <p class="text-gray-600">Disfruto diseñando:</p>
-                      <p class="pb-3">Web, Aplicaciones, Logotipos y Ilustraciones</p>
-                      <hr class="border-gray-600">
-                      <p class="text-gray-600 pt-3">Herramientas de diseño:</p>
-                      <p>Photoshop</p>
-                      <p>MediBang Paint Pro</p>
-                      <p>Sony Vega</p>
-                      <p>Lápiz y papel</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="mb-6">
+              <input name="name" id="name" placeholder="Nombre (Personal o Empresa)" type="text"
+                  class="w-full border border-gray-300 rounded py-2 px-3 placeholder-gray-500 text-gray-900">
           </div>
-          <div class="shadow-lg rounded-lg overflow-hidden tarjeta">
-            <div class="p-6 target">
-              <div class="flex justify-center items-center">
-                <img src="./public/img/diesño.png" alt="" width="15%" srcset="">
-              </div>
-              <h3 class="text-xl font-semibold mb-2 text-center color-text-card pt-1"><strong>Diseño</strong></h3>
-              <p class="text-gray-700 text-center">Valoro la estructura de contenido simple, los patrones de diseño limpios y las interacciones bien pensadas.</p>
-              <br>
-              <div class="flex justify-center items-center pt-1 pb-1" style="background-color: rgb(237, 237, 237)">
-                <div class="text-center">
-                  <div class="card">
-                    <div class="card-body">
-                      <p class="text-gray-600">Disfruto diseñando:</p>
-                      <p class="pb-3">Web, Aplicaciones, Logotipos y Ilustraciones</p>
-                      <hr class="border-gray-600">
-                      <p class="text-gray-600 pt-3">Herramientas de diseño:</p>
-                      <p>Photoshop</p>
-                      <p>MediBang Paint Pro</p>
-                      <p>Sony Vega</p>
-                      <p>Lápiz y papel</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="mb-6">
+              <textarea placeholder="¿Por qué quieres contactarme?"
+                  class="w-full border border-gray-300 rounded py-2 px-3 placeholder-gray-500 text-gray-900"
+                  id="textarea" name="textarea" rows="3"></textarea>
           </div>
+          <div>
+              <button type="button"
+                  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                  id="miformulario" onclick="formulario()">
+                  Enviar
+              </button>
+          </div>
+      </form>
+
       </div>
-  </div> -->
+    </section>
 </body>
+    <!-- Footer -->
+    <footer class="text-white py-6 footer-design">
+      <div class="container mx-auto px-4">
+          <div class="flex justify-center">
+              <div class="text-center">
+                  <p class="text-lg font-semibold color-footer">¡Gracias por visitarme!</p>
+                  <p class="mt-2 color-footer">Encuéntranos en las redes sociales:</p>
+                  <div class="flex justify-center mt-4 space-x-4">
+                      <!-- Enlaces a redes sociales -->
+                      <a onclick="element()" class="color-footer px-3 py-3 text-4xl icon-hover what" href="https://api.whatsapp.com/send?phone=56957326432&text=Hola!%20vengo%20de%20tu%20pagina%20web" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                      <a onclick="element()" class="color-footer px-3 py-3 text-4xl icon-hover link" href="https://www.linkedin.com/in/miguel-sarpi/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a onclick="element()" class="color-footer px-3 py-3 text-4xl icon-hover git" href="https://github.com/MSarpi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                      <a onclick="element()" class="color-footer px-3 py-3 text-4xl icon-hover inst" href="https://www.instagram.com/jinsei_ilustrador/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+              </div>
+          </div>
+          <p class="text-center mt-4 color-footer">&copy; 2023 SarpiDesign. Todos los derechos reservados.</p>
+      </div>
+  </footer>
 <footer></footer>
 <script src="./public/js/aos.js"></script>
 <script>
     AOS.init({
-      duration: 2000 
+      duration: 1000 
     });
 </script>
 
@@ -418,4 +387,13 @@
 <script src="./public/js/main.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://kit.fontawesome.com/3742402539.js" crossorigin="anonymous"></script>
+<script src="./public/js/vanilla-tilt.js"></script>
+<script src="./public//js/aos.js"></script>
+<script src="./public/js/jquery-3.6.3.min.js"></script>  
+<script src="./public/js/sweetalert2@11.js"></script>
+<script src="./public/js/toastr.js"></script>
+<script src="./public/js/typed.js"></script>
+
+
+        
 </html>
