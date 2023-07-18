@@ -262,6 +262,18 @@ top: -10px; /* Ocultamos el menú hacia arriba */
     background-color: rgb(70, 70, 70);
 }
 
+.night-mode .btn-contact{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 10px 20px; 
+    border: 1px solid  #dc40a8;
+    border-radius: 10px;  
+    cursor: pointer;
+    box-shadow: none;
+    transition: all 0.8s;
+}
+
 .color-footer{
     color: rgb(0, 0, 0) !important;
 }
@@ -428,10 +440,9 @@ top: -10px; /* Ocultamos el menú hacia arriba */
 .btn-contact{
     text-decoration: none;
     font-size: 1rem;
-    color: #f3f3f3;
-    padding: 10px 20px;
-    background: linear-gradient(to right, #bb007d, #550039); 
-    border: none;
+    color: #000000;
+    padding: 10px 20px; 
+    border: 1px solid  #ff00aa;
     border-radius: 10px;  
     cursor: pointer;
     box-shadow: none;
