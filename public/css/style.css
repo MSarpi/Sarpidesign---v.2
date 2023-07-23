@@ -53,9 +53,37 @@ body::-webkit-scrollbar-thumb:hover {
 
 }
 
+.tarjetas-certificado{
+    max-width:100rem; /* Ajusta el tamaño máximo según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+
+}
+
+
 .tarjeta {
     width: 95%; /* Ajusta el ancho de la tarjeta según tus necesidades */
     margin: 0 auto; /* Centra la tarjeta horizontalmente dentro del contenedor */
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: scale(1.03);
+}
+
+.empresas{
+    transition: transform 0.3s ease;
+}
+
+.empresas:hover {
+    transform: scale(1.05);
+}
+
+.contact{
+    transition: transform 0.3s ease;
+}
+
+.contact:hover{
+    transform: scale(1.05);
 }
 
 .target{
@@ -454,6 +482,26 @@ top: -10px; /* Ocultamos el menú hacia arriba */
 
 .btn-contact:hover{
     background: #cc0088;
+    box-shadow: 1px 1px 11px 5px;
+    color: white;
+}
+
+.btn-certificado{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000000;
+    padding: 10px 20px; 
+    background-color: #cc0088;
+    border: 1px solid  #cc0088;
+    border-radius: 10px;  
+    cursor: pointer;
+    box-shadow: none;
+    transition: all 0.8s;
+    color: white;
+}
+
+.btn-certificado:hover{
+    background: #ff35bc;
     box-shadow: 1px 1px 11px 5px;
     color: white;
 }

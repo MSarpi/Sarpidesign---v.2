@@ -1,3 +1,5 @@
+
+
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
 // Mostrar el botón cuando el usuario haya bajado 20% de la altura de la página
@@ -211,7 +213,13 @@ function formulario(){
 			}
 		});
 	}else{
-		alert("faltan datos");
+    //alert(JSON.stringify(erro));
+    const toastr = document.getElementById("toastr");
+    toastr.textContent = "¡Faltan Datos!";
+    toastr.classList.remove("hidden");
+    setTimeout(function () {
+      toastr.classList.add("hidden");
+    }, 3000);
 	}
 }
 
@@ -224,3 +232,10 @@ function configureLoadingScreen(screen){
             screen.fadeOut();
         });
 }
+
+const button = document.getElementById('collapseButton');
+const content = document.getElementById('collapseContent');
+
+button.addEventListener('click', () => {
+  content.classList.toggle('hidden');
+});
